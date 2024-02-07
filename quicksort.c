@@ -25,8 +25,8 @@ return end;
 void quicksort(int arr[], int low, int high) {
     if (low < high) {
         int loc = partition(arr, low, high);
-        quicksort(arr, low, loc - 1); // Sort elements before the pivot (excluding the pivot)
-        quicksort(arr, loc + 1, high); // Sort elements after the pivot (excluding the pivot)
+        quicksort(arr, low, loc - 1); 
+        quicksort(arr, loc + 1, high); 
     }
 }
 
